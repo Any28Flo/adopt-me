@@ -5,7 +5,7 @@
 
  */
 const Pet = ( {name, specie,breed}) =>{
-  
+
   return React.createElement("div", {},
       [
           React.createElement("h2", {} , name),
