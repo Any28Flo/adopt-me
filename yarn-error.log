@@ -1,0 +1,73 @@
+Arguments: 
+  /home/analin/.nvm/versions/node/v12.14.1/bin/node /usr/share/yarn/bin/yarn.js add @/undefined
+
+PATH: 
+  /home/analin/.nvm/versions/node/v12.14.1/lib/node_modules/npm/node_modules/npm-lifecycle/node-gyp-bin:/home/analin/Documents/courses/FrontEndMasters/adopt-me/node_modules/.bin:./usr/bin/mongo/bin:/home/analin/.nvm/versions/node/v12.14.1/bin:/home/analin/Documents/courses/FrontEndMasters/adopt-me/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  12.14.1
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://registry.npmjs.org/@%2fundefined: Not found
+      at Request.params.callback [as _callback] (/usr/share/yarn/lib/cli.js:66987:18)
+      at Request.self.callback (/usr/share/yarn/lib/cli.js:140748:22)
+      at Request.emit (events.js:223:5)
+      at Request.<anonymous> (/usr/share/yarn/lib/cli.js:141720:10)
+      at Request.emit (events.js:223:5)
+      at IncomingMessage.<anonymous> (/usr/share/yarn/lib/cli.js:141642:12)
+      at Object.onceWrapper (events.js:312:28)
+      at IncomingMessage.emit (events.js:228:7)
+      at endReadableNT (_stream_readable.js:1185:12)
+      at processTicksAndRejections (internal/process/task_queues.js:81:21)
+
+npm manifest: 
+  {
+    "name": "adopt-me",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "dev": "parcel src/index.html",
+      "format": "prettier --write \"src/**/*.{js,html}\"",
+      "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/Any28Flo/adopt-me.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/Any28Flo/adopt-me/issues"
+    },
+    "homepage": "https://github.com/Any28Flo/adopt-me#readme",
+    "devDependencies": {
+      "babel-eslint": "^10.1.0",
+      "eslint": "^6.8.0",
+      "eslint-config-prettier": "^6.10.1",
+      "eslint-plugin-import": "^2.20.2",
+      "eslint-plugin-jsx-a11y": "^6.2.3",
+      "eslint-plugin-react": "^7.19.0",
+      "eslint-plugin-react-hooks": "^3.0.0",
+      "parcel-bundler": "^1.12.4",
+      "prettier": "^2.0.4"
+    },
+    "dependencies": {
+      "react": "^16.13.1",
+      "react-dom": "^16.13.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
