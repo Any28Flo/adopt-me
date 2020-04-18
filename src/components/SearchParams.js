@@ -20,15 +20,17 @@ const SearchParams = () =>{
 
     }, [animal,setBreed, setBreeds]);
 
-    const requestPets =  async () =>{
-        const {animals} = await pet.animals({
+    async function requestPets() {
+        const { animals } = await pet.animals({
             location,
             breed,
             type: animal
         });
 
-        setPets(animals || [])
-    };
+        console.log("animals", animals);
+
+        setPets(animals || []);
+    }
 
     return(
         <div className="search-params">
