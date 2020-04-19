@@ -8,6 +8,7 @@ const Results = ({pets}) =>{
                 pets.map(pet => {
 
                     return(
+
                         <Pet
                         animal={pet.type}
                         key={pet.id}
@@ -16,8 +17,6 @@ const Results = ({pets}) =>{
                         breed={pet.breeds.primary}
                         media={pet.photos}
                         location={`${pet.contact.address.city} , ${pet.contact.address.state}`}/>)
-
-
                 })
 
             )}
